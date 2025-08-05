@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananya Bhadoria | Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8d3b3b",
+              secondary: "#fcebea",
+              backgroundLight: "#fef6f3",
+              backgroundDark: "#1a1a1a",
+              textDark: "#e0e0e0",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      h1,
+      h2 {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-backgroundLight text-[#381b1b] dark:bg-backgroundDark dark:text-textDark transition-colors duration-300"
+  >
+    <script>
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 py-4 shadow-sm">
+      <div class="text-2xl font-bold text-primary">Ananya Bhadoria</div>
+      <nav class="space-x-4 text-sm">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a
+          href="#contact"
+          class="bg-primary text-white px-4 py-1 rounded-full text-sm hover:bg-[#a74b4b] transition"
+        >
+          Hire Me
+        </a>
+        <button
+          onclick="toggleDarkMode()"
+          class="text-sm px-3 py-1 border rounded-full hover:bg-primary hover:text-white"
+        >
+          🌓 Theme
+        </button>
+      </div>
+    </header>
+    <section
+      class="grid md:grid-cols-2 items-center px-6 py-12 max-w-7xl mx-auto"
+    >
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Designing My <span class="text-[#8d3b3b]">Passion</span> Into Reality
+        </h1>
+        <p class="mt-4 text-sm text-gray-700">
+          Hi, I’m <strong>Ananya Bhadoria</strong> — a frontend developer who
+          turns ideas into beautiful interfaces using HTML, Tailwind CSS,
+          JavaScript & a touch of magic ✨
+        </p>
+        <button
+          class="mt-6 bg-[#8d3b3b] text-white px-6 py-2 rounded-full text-sm"
+        >
+          View My Work
+        </button>
+      </div>
+      <div class="flex justify-center mt-8 md:mt-0">
+        <img
+          src="C:\Users\as082\OneDrive\Desktop\August\Task4\me_3.jpg"
+          alt="Ananya's Photo"
+          class="rounded-lg max-h-[400px] shadow-lg"
+        />
+      </div>
+    </section>
+    <section class="bg-[#f9d6cd] py-6">
+      <div
+        class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-4 text-sm"
+      >
+        <div>
+          <div class="text-2xl font-bold text-[#8d3b3b]">4</div>
+          <p>Personal Projects</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-[#8d3b3b]">2</div>
+          <p>Internships (1 Ongoing)</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-[#8d3b3b]">Always</div>
+          <p>Curious to Learn</p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#fcebea] py-16 px-6" id="about">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#381b1b]"
+      >
+        About Me
+      </h2>
+
+      <div
+        class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 text-sm text-[#381b1b]"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105"
+        >
+          <h3 class="text-lg font-semibold text-[#8d3b3b] mb-2">🪄 Who I Am</h3>
+          <p>
+            I’m <strong>Ananya Bhadoria</strong>, a frontend developer who turns
+            emotions into interfaces. I blend code and creativity to build
+            digital stories with HTML, Tailwind, JavaScript & magic ✨
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105"
+        >
+          <h3 class="text-lg font-semibold text-[#8d3b3b] mb-2">
+            🎨 My Aesthetic
+          </h3>
+          <p>
+            Soft gradients, floating cards, pastel vibes, and dreamy animations.
+            Every pixel I place is made to feel like a hug — calm, elegant, and
+            magical.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105"
+        >
+          <h3 class="text-lg font-semibold text-[#8d3b3b] mb-2">
+            🌱 My Journey
+          </h3>
+          <p>
+            From curious learner to passionate developer — I’ve built a café
+            site, a stopwatch, a weather app, and even a cute Tic Tac Toe game!
+            And this is just the beginning 🚀
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#fef6f3] py-16 px-6" id="projects">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#381b1b]"
+      >
+        My Creative Work
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Project Card -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="text-xl font-semibold text-[#8d3b3b] mb-2">
+            Matcha Café Website
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            A dreamy, pastel-themed café website with animated menus and scroll
+            effects using GSAP and Tailwind.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://ananya214.github.io/-PRODIGY_WD_01/"
+              class="text-[#8d3b3b] font-medium hover:underline"
+              >🔗 View Live</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="text-xl font-semibold text-[#8d3b3b] mb-2">
+            TimeMate Stopwatch
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            A cute glassmorphism stopwatch with Start, Pause, Reset, Lap
+            features and responsive landscape layout.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://ananya214.github.io/PRODIGY_WD_02/"
+              class="text-[#8d3b3b] font-medium hover:underline"
+              >🔗 View Live</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="text-xl font-semibold text-[#8d3b3b] mb-2">Weather App</h3>
+          <p class="text-sm text-gray-700 mb-4">
+            A soft, animated weather app with day/night theme switch, API
+            integration, and floating visuals.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://ananya214.github.io/PRODIGY_WD_03/"
+              class="text-[#8d3b3b] font-medium hover:underline"
+              >🔗 View Live</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="text-xl font-semibold text-[#8d3b3b] mb-2">
+            Tic Tac Toe Game
+          </h3>
+          <p class="text-sm text-gray-700 mb-4">
+            A pastel-themed, glassy tic-tac-toe game with cat 🐱 and dog 🐶
+            icons, sound effects and bot mode.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://ananya214.github.io/PRODIGY_WD_05/"
+              class="text-[#8d3b3b] font-medium hover:underline"
+              >🔗 View Live</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#fff9f7] py-16 px-6" id="education">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">🎓 My Education</h2>
+        <p class="text-sm text-gray-700 mb-10">
+          The journey that shaped my creative & technical skills.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white border border-[#f2dede] rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-1"
+          >
+            <h3 class="text-xl font-semibold text-[#8d3b3b]">
+              Bachelor of Technology
+            </h3>
+            <p class="text-sm text-gray-700">Computer Science Engineering</p>
+            <p class="mt-2 text-xs text-gray-500">
+              XYZ University, 2021 - 2025
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white border border-[#f2dede] rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-1"
+          >
+            <h3 class="text-xl font-semibold text-[#8d3b3b]">High School</h3>
+            <p class="text-sm text-gray-700">Science with Mathematics</p>
+            <p class="mt-2 text-xs text-gray-500">ABC School, 2019 - 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#fff4f0] py-16 px-6" id="experience">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">💼 Experience & 📜 Certificates</h2>
+        <p class="text-sm text-gray-700 mb-10">
+          Real-world work and constant learning to keep growing 🌱
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Internship 1 -->
+          <div
+            class="bg-white border border-[#f2dede] rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-1"
+          >
+            <h3 class="text-lg font-semibold text-[#8d3b3b]">
+              Frontend Intern
+            </h3>
+            <p class="text-sm text-gray-700">Prodigy InfoTech</p>
+            <p class="mt-2 text-xs text-gray-500">Completed</p>
+          </div>
+
+          <!-- Internship 2 -->
+          <div
+            class="bg-white border border-[#f2dede] rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-1"
+          >
+            <h3 class="text-lg font-semibold text-[#8d3b3b]">UI/UX Intern</h3>
+            <p class="text-sm text-gray-700">Currently Ongoing</p>
+            <p class="mt-2 text-xs text-gray-500">Started Aug 2025</p>
+          </div>
+
+          <!-- Certificate 1 -->
+          <div
+            class="bg-white border border-[#f2dede] rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-1"
+          >
+            <h3 class="text-lg font-semibold text-[#8d3b3b]">
+              UI/UX Design Course
+            </h3>
+            <p class="text-sm text-gray-700">Still Learning ✨</p>
+            <p class="mt-2 text-xs text-gray-500">
+              Covers Figma, Research, Prototyping
+            </p>
+          </div>
+
+          <!-- Optional Placeholder -->
+          <div
+            class="bg-white border border-[#f2dede] rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-1"
+            href="#contact"
+          >
+            <h3 class="text-lg font-semibold text-[#8d3b3b]">
+              More Coming Soon...
+            </h3>
+            <p class="text-sm text-gray-700">
+              Always growing, always learning 🌸
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <form
+      id="
+    contact"
+      action="https://getform.io/f/bkknmjmb"
+      method="POST"
+      class="grid gap-4 text-left max-w-xl mx-auto mt-8"
+    >
+      <!-- Anti-spam -->
+      <input type="hidden" name="_gotcha" style="display: none !important" />
+
+      <!-- Your Name -->
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        class="p-3 border border-[#8d3b3b] rounded-lg"
+      />
+
+      <!-- Your Email -->
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        class="p-3 border border-[#8d3b3b] rounded-lg"
+      />
+
+      <!-- Optional: Short Message -->
+      <textarea
+        name="message"
+        rows="3"
+        placeholder="Write something if you want ✨"
+        class="p-3 border border-[#8d3b3b] rounded-lg"
+      ></textarea>
+
+      <!-- Submit -->
+      <button
+        type="submit"
+        class="bg-[#8d3b3b] text-white px-6 py-2 rounded-full hover:bg-[#a74b4b] transition"
+      >
+        Just Connect 🤝
+      </button>
+    </form>
+    <!-- Footer -->
+    <footer
+      class="bg-[#fcebea] text-[#381b1b] dark:bg-[#2b2b2b] dark:text-textDark py-8 mt-16"
+    >
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-sm">
+        <!-- Left: Logo + Tagline -->
+        <div>
+          <h3 class="text-xl font-bold text-primary dark:text-[#fca5a5]">
+            Ananya Bhadoria
+          </h3>
+          <p class="mt-2">Frontend Developer & UI/UX Explorer ☁️</p>
+        </div>
+
+        <!-- Center: Quick Links -->
+        <div class="space-y-2">
+          <h4 class="font-semibold">Quick Links</h4>
+          <ul class="space-y-1">
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#projects" class="hover:underline">Projects</a></li>
+            <li><a href="#education" class="hover:underline">Education</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Socials -->
+        <div>
+          <h4 class="font-semibold">Connect With Me</h4>
+          <div class="flex gap-4 mt-2 text-lg">
+            <a
+              href="https://www.linkedin.com/in/your-link"
+              target="_blank"
+              class="hover:text-primary"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/your-username"
+              target="_blank"
+              class="hover:text-primary"
+              >GitHub</a
+            >
+            <a href="mailto:your@email.com" class="hover:text-primary">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-gray-500 dark:text-gray-400 mt-8">
+        © 2025 Ananya Bhadoria. Made with 💖 & Tailwind.
+      </div>
+    </footer>
+  </body>
+</html>

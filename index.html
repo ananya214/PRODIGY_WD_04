@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananya – Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#712f2f",
+              softPink: "#fef6f3",
+              darkBg: "#1a1a1a",
+              lightText: "#381b1b",
+              darkCard: "#2b2b2b",
+              darkText: "#e0e0e0",
+            },
+            fontFamily: {
+              heading: ['"Playfair Display"', "serif"],
+              body: ['"Poppins"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-softPink text-lightText dark:bg-darkBg dark:text-darkText transition-colors duration-300"
+  >
+    <!-- ✅ Navbar -->
+    <header
+      class="py-5 px-6 md:px-12 bg-softPink text-lightText dark:bg-darkBg dark:text-white transition-colors duration-300 flex flex-wrap justify-between items-center gap-4 md:gap-0"
+    >
+      <h1 class="text-2xl font-bold font-heading">Ananya</h1>
+      <nav class="space-x-5 text-sm hidden md:flex">
+        <a href="#about" class="hover:underline dark:hover:text-primary"
+          >About</a
+        >
+        <a href="#projects" class="hover:underline dark:hover:text-primary"
+          >Projects</a
+        >
+        <a href="#work" class="hover:underline dark:hover:text-primary">Work</a>
+        <a href="#contact" class="hover:underline dark:hover:text-primary"
+          >Contact</a
+        >
+      </nav>
+      <div class="flex items-center gap-3">
+        <a
+          href="#contact"
+          class="bg-primary text-white px-4 py-2 rounded-full text-sm"
+        >
+          Hire Me
+        </a>
+        <button
+          id="toggle-theme"
+          class="bg-primary text-white p-2 rounded-full shadow-md text-xl"
+        >
+          <i id="theme-icon" class="ri-sun-line"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ✅ Hero Section -->
+    <section
+      class="py-20 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10 bg-softPink dark:bg-darkBg transition-colors duration-300"
+    >
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-5xl md:text-6xl font-heading leading-tight mb-6">
+          Crafting <span class="text-primary">Beautiful Interfaces</span>
+        </h2>
+        <p class="text-lightText dark:text-gray-300 mb-6">
+          I'm a frontend developer with a love for clean UI, dreamy animations,
+          and smooth experiences. Let’s build something magical together.
+        </p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img
+          src="C:\Users\as082\OneDrive\Desktop\August\Task4\me_3.jpg"
+          alt="Frontend Developer Girl"
+          class="rounded-xl w-[300px] md:w-[350px] lg:w-[400px] object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- ✅ Skills Section -->
+    <section
+      class="bg-primary dark:bg-[#5e1f1f] py-6 transition-colors duration-300"
+    >
+      <div class="max-w-5xl mx-auto px-4">
+        <h2
+          class="text-base md:text-lg font-semibold text-white text-center mb-4 tracking-widest uppercase"
+        >
+          Tools I Work With 💻
+        </h2>
+        <div class="flex flex-wrap justify-center gap-3 text-sm text-white">
+          <span class="px-3 py-1 border border-white rounded-full"
+            ><i class="ri-html5-fill"></i> HTML5</span
+          >
+          <span class="px-3 py-1 border border-white rounded-full"
+            ><i class="ri-css3-fill"></i> CSS3</span
+          >
+          <span class="px-3 py-1 border border-white rounded-full"
+            ><i class="ri-javascript-fill"></i>JavaScript</span
+          >
+          <span class="px-3 py-1 border border-white rounded-full">GSAP</span>
+          <span class="px-3 py-1 border border-white rounded-full"
+            >Framer Motion</span
+          >
+          <span class="px-3 py-1 border border-white rounded-full">
+            <i class="ri-reactjs-line"></i>React</span
+          >
+          <span class="px-3 py-1 border border-white rounded-full"
+            ><i class="ri-figma-line"></i>Figma</span
+          >
+          <span class="px-3 py-1 border border-white rounded-full">UI/UX</span>
+          <span class="px-3 py-1 border border-white rounded-full"
+            ><i class="ri-github-line"></i>GitHub</span
+          >
+        </div>
+      </div>
+    </section>
+    <section
+      id="about"
+      class="py-24 px-6 md:px-12 bg-softPink dark:bg-darkBg transition-colors duration-300"
+    >
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-heading text-center mb-12">
+          Meet the Human Behind the Code 👩🏻‍💻
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white dark:bg-darkCard/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-white/30 dark:border-white/10 transition-all hover:scale-105 duration-300"
+          >
+            <h3 class="text-xl font-semibold mb-2">🌱 Who I Am</h3>
+            <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+              I'm Ananya — a frontend developer and UI/UX explorer who’s always
+              chasing clean code, soft visuals, and meaningful user experiences.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white dark:bg-darkCard/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-white/30 dark:border-white/10 transition-all hover:scale-105 duration-300"
+          >
+            <h3 class="text-xl font-semibold mb-2">🎨 What I Love</h3>
+            <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+              Crafting dreamy, aesthetic layouts using Tailwind, Figma, GSAP &
+              React. I love soft gradients, playful icons, and smooth scroll
+              effects.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white dark:bg-darkCard/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-white/30 dark:border-white/10 transition-all hover:scale-105 duration-300"
+          >
+            <h3 class="text-xl font-semibold mb-2">☁️ How I Work</h3>
+            <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+              I combine clean structure with thoughtful design — aiming for code
+              that feels intuitive and layouts that feel alive. My approach is
+              playful, but purposeful.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-4 bg-[#fef9f5] dark:bg-[#121212]">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">
+          <span class="text-black dark:text-white">My</span>
+          <span class="text-[#6b2737] dark:text-[#fddede]"> Projects</span>
+        </h2>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">
+          Flip the card to explore my dreamy creations ✨
+        </p>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center"
+        >
+          <!-- CARD 1 -->
+          <div
+            class="w-[270px] h-[480px] relative flip-card group cursor-pointer mx-auto"
+          >
+            <div class="flip-card-inner group-hover:rotate-y-180">
+              <div
+                class="flip-card-front absolute w-full h-full rounded-xl overflow-hidden shadow-xl"
+              >
+                <video
+                  class="w-full h-full object-cover"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source
+                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr_1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div
+                class="flip-card-back absolute w-full h-full bg-white/30 dark:bg-white/10 backdrop-blur-md p-6 rounded-xl flex flex-col justify-center items-center text-center shadow-xl"
+              >
+                <h3
+                  class="text-xl font-bold text-[#6b2737] dark:text-[#fddede] mb-2"
+                >
+                  ⏱️ TimeMate
+                </h3>
+                <p class="text-sm text-gray-800 dark:text-gray-300 mb-3">
+                  Cute stopwatch with responsive glass UI, lap tracking, and
+                  GSAP animations.
+                </p>
+                <div class="flex gap-4 text-sm font-medium">
+                  <a href="#" class="text-[#6b2737] hover:underline">🔗 Live</a>
+                  <a href="#" class="text-[#6b2737] hover:underline"
+                    >📁 GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="w-[270px] h-[480px] relative flip-card group cursor-pointer mx-auto"
+          >
+            <div class="flip-card-inner group-hover:rotate-y-180">
+              <div
+                class="flip-card-front absolute w-full h-full rounded-xl overflow-hidden shadow-xl"
+              >
+                <video
+                  class="w-full h-full object-cover"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source
+                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr_3.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div
+                class="flip-card-back absolute w-full h-full bg-white/30 dark:bg-white/10 backdrop-blur-md p-6 rounded-xl flex flex-col justify-center items-center text-center shadow-xl"
+              >
+                <h3
+                  class="text-xl font-bold text-[#6b2737] dark:text-[#fddede] mb-2"
+                >
+                  ☀️ Weather App
+                </h3>
+                <p class="text-sm text-gray-800 dark:text-gray-300 mb-3">
+                  A dreamy weather app with time-based themes and pastel UI.
+                </p>
+                <div class="flex gap-4 text-sm font-medium">
+                  <a href="#" class="text-[#6b2737] hover:underline">🔗 Live</a>
+                  <a href="#" class="text-[#6b2737] hover:underline"
+                    >📁 GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="w-[270px] h-[480px] relative flip-card group cursor-pointer mx-auto"
+          >
+            <div class="flip-card-inner group-hover:rotate-y-180">
+              <div
+                class="flip-card-front absolute w-full h-full rounded-xl overflow-hidden shadow-xl"
+              >
+                <video
+                  class="w-full h-full object-cover"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source
+                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div
+                class="flip-card-back absolute w-full h-full bg-white/30 dark:bg-white/10 backdrop-blur-md p-6 rounded-xl flex flex-col justify-center items-center text-center shadow-xl"
+              >
+                <h3
+                  class="text-xl font-bold text-[#6b2737] dark:text-[#fddede] mb-2"
+                >
+                  🎮 Tic Tac Toe
+                </h3>
+                <p class="text-sm text-gray-800 dark:text-gray-300 mb-3">
+                  A cute glassy tic-tac-toe game with animals and smooth UI.
+                </p>
+                <div class="flex gap-4 text-sm font-medium">
+                  <a href="#" class="text-[#6b2737] hover:underline">🔗 Live</a>
+                  <a href="#" class="text-[#6b2737] hover:underline"
+                    >📁 GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="w-[270px] h-[480px] relative flip-card group cursor-pointer mx-auto"
+          >
+            <div class="flip-card-inner group-hover:rotate-y-180">
+              <div
+                class="flip-card-front absolute w-full h-full rounded-xl overflow-hidden shadow-xl"
+              >
+                <video
+                  class="w-full h-full object-cover"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                >
+                  <source
+                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr_5.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div
+                class="flip-card-back absolute w-full h-full bg-white/30 dark:bg-white/10 backdrop-blur-md p-6 rounded-xl flex flex-col justify-center items-center text-center shadow-xl"
+              >
+                <h3
+                  class="text-xl font-bold text-[#6b2737] dark:text-[#fddede] mb-2"
+                >
+                  🍵 Café Website
+                </h3>
+                <p class="text-sm text-gray-800 dark:text-gray-300 mb-3">
+                  Matcha-themed café site with scroll animations and cute fonts.
+                </p>
+                <div class="flex gap-4 text-sm font-medium">
+                  <a href="#" class="text-[#6b2737] hover:underline">🔗 Live</a>
+                  <a href="#" class="text-[#6b2737] hover:underline"
+                    >📁 GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 px-4 bg-[#fffaf6] dark:bg-[#121212]">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">
+          <span class="text-black dark:text-white">Experience &</span>
+          <span class="text-[#6b2737] dark:text-[#fddede]"> Certification</span>
+        </h2>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">
+          Here's a peek into my professional journey so far 🌸
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Internship 1 -->
+          <div
+            class="bg-white/40 dark:bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg hover:shadow-2xl transition duration-300"
+          >
+            <h3
+              class="text-xl font-semibold text-[#6b2737] dark:text-[#fddede] mb-2"
+            >
+              🌐 Prodigy InfoTech
+            </h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Web Development Intern – Built projects like Stopwatch, Weather
+              App, and Tic Tac Toe using HTML, CSS, JS.
+            </p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+              July–August 2025
+            </p>
+          </div>
+
+          <!-- Internship 2 -->
+          <div
+            class="bg-white/40 dark:bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg hover:shadow-2xl transition duration-300"
+          >
+            <h3
+              class="text-xl font-semibold text-[#6b2737] dark:text-[#fddede] mb-2"
+            >
+              💼 [Your Other Company Name]
+            </h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              UI/UX Intern – Worked on user flows, low-fi designs & mobile UX
+              for a laundry service app.
+            </p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+              Month–Month 2025
+            </p>
+          </div>
+
+          <!-- Certification -->
+          <div
+            class="bg-white/40 dark:bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-lg hover:shadow-2xl transition duration-300"
+          >
+            <h3
+              class="text-xl font-semibold text-[#6b2737] dark:text-[#fddede] mb-2"
+            >
+              📜 UI/UX Course
+            </h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300">
+              Completed UI/UX design certification – learned wireframing,
+              prototyping & usability testing.
+            </p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+              Issued August 2025
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-24 px-4 bg-[#fffaf7] dark:bg-[#121212] relative overflow-hidden"
+    >
+      <div class="max-w-4xl mx-auto relative z-10">
+        <h2 class="text-4xl font-bold text-center mb-16">
+          <span class="text-black dark:text-white">My</span>
+          <span class="text-[#6b2737] dark:text-[#fddede]"> Education</span>
+        </h2>
+
+        <div
+          class="relative border-l-2 border-[#f2d3d7] dark:border-[#6b2737] pl-6 space-y-16"
+        >
+          <!-- Item 1 -->
+          <div class="relative group">
+            <div
+              class="absolute -left-3 top-1 w-5 h-5 rounded-full bg-[#6b2737] dark:bg-[#fddede] shadow-lg group-hover:scale-110 transition"
+            ></div>
+            <div
+              class="ml-4 pl-4 bg-white/40 dark:bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <h3
+                class="text-xl font-semibold text-[#6b2737] dark:text-[#fddede] mb-1"
+              >
+                🎓 Bachelor's in [Your Major]
+              </h3>
+              <p class="text-sm text-gray-700 dark:text-gray-300">
+                XYZ University, Pune • 2022 – 2025
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                Focus on Frontend Development, UI/UX Design, JavaScript, and
+                modern web technologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="relative group">
+            <div
+              class="absolute -left-3 top-1 w-5 h-5 rounded-full bg-[#6b2737] dark:bg-[#fddede] shadow-lg group-hover:scale-110 transition"
+            ></div>
+            <div
+              class="ml-4 pl-4 bg-white/40 dark:bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <h3
+                class="text-xl font-semibold text-[#6b2737] dark:text-[#fddede] mb-1"
+              >
+                🏫 High School – Science Stream
+              </h3>
+              <p class="text-sm text-gray-700 dark:text-gray-300">
+                ABC School • 2020 – 2022
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                Learned logic, programming basics, and math foundations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating blob deco -->
+      <div
+        class="absolute w-72 h-72 bg-pink-100 dark:bg-[#6b2737] rounded-full opacity-20 blur-3xl -top-10 -right-20 z-0"
+      ></div>
+      <div
+        class="absolute w-64 h-64 bg-[#fbdedc] dark:bg-[#4a1821] rounded-full opacity-20 blur-3xl -bottom-20 -left-20 z-0"
+      ></div>
+    </section>
+    <section class="py-16 px-4 bg-[#fef9f5] dark:bg-[#121212]" id="contact">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">
+          <span class="text-black dark:text-white">Send a</span>
+          <span class="text-[#6b2737] dark:text-[#fddede]"> Message</span>
+        </h2>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">
+          I’d love to hear from you 🌸
+        </p>
+
+        <form
+          id="contactForm"
+          action="https://getform.io/f/apjpdqza"
+          method="POST"
+          class="grid grid-cols-1 gap-6 text-left"
+        >
+          <!-- Name -->
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="p-4 rounded-lg bg-white/50 dark:bg-white/10 backdrop-blur-md border border-gray-300 dark:border-gray-700 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-[#6b2737]"
+          />
+
+          <!-- Email -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="p-4 rounded-lg bg-white/50 dark:bg-white/10 backdrop-blur-md border border-gray-300 dark:border-gray-700 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-[#6b2737]"
+          />
+
+          <!-- Message -->
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Write something dreamy here..."
+            required
+            class="p-4 rounded-lg bg-white/50 dark:bg-white/10 backdrop-blur-md border border-gray-300 dark:border-gray-700 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-[#6b2737]"
+          ></textarea>
+
+          <!-- Honeypot -->
+          <input
+            type="hidden"
+            name="_gotcha"
+            style="display: none !important"
+          />
+
+          <!-- Radio buttons -->
+          <div
+            class="flex flex-col md:flex-row md:gap-6 text-gray-700 dark:text-gray-300"
+          >
+            <label
+              ><input type="radio" name="gender" value="male" checked />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+            <label
+              ><input type="radio" name="gender" value="other" /> Other</label
+            >
+          </div>
+
+          <!-- Button -->
+          <button
+            type="submit"
+            class="py-3 px-6 bg-[#6b2737] text-white font-medium rounded-lg hover:bg-[#501d2c] transition-all"
+          >
+            Send Message 💌
+          </button>
+        </form>
+
+        <!-- Toast -->
+        <div
+          id="toast"
+          class="hidden fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-white/80 dark:bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl shadow-lg text-[#6b2737] dark:text-[#fddede] font-semibold transition-all duration-300"
+        >
+          Your dreamy message has been sent! 💖
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Dark Mode Toggle Script -->
+    <script>
+      const toggleThemeBtn = document.getElementById("toggle-theme");
+      const themeIcon = document.getElementById("theme-icon");
+      const body = document.body;
+
+      function setTheme(theme) {
+        if (theme === "dark") {
+          body.classList.add("dark");
+          themeIcon.className = "ri-sun-line";
+        } else {
+          body.classList.remove("dark");
+          themeIcon.className = "ri-moon-clear-line";
+        }
+        localStorage.setItem("theme", theme);
+      }
+
+      const storedTheme = localStorage.getItem("theme");
+      setTheme(storedTheme === "dark" ? "dark" : "light");
+
+      toggleThemeBtn.addEventListener("click", () => {
+        const isDark = body.classList.contains("dark");
+        setTheme(isDark ? "light" : "dark");
+      });
+      const form = document.getElementById("contactForm");
+      const toast = document.getElementById("toast");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        }).then(() => {
+          toast.classList.remove("hidden");
+          setTimeout(() => {
+            toast.classList.add("hidden");
+          }, 4000);
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
