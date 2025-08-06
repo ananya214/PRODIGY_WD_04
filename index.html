@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ananya – Frontend Developer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Asset/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -78,6 +78,7 @@
     <section
       class="py-20 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10 bg-softPink dark:bg-darkBg transition-colors duration-300"
     >
+      <!-- Left Side Content -->
       <div class="md:w-1/2 text-center md:text-left">
         <h2 class="text-5xl md:text-6xl font-heading leading-tight mb-6">
           Crafting <span class="text-primary">Beautiful Interfaces</span>
@@ -86,10 +87,31 @@
           I'm a frontend developer with a love for clean UI, dreamy animations,
           and smooth experiences. Let’s build something magical together.
         </p>
+
+        <!-- Buttons -->
+        <div
+          class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start"
+        >
+          <a
+            href="#projects"
+            class="px-6 py-3 rounded-full bg-primary text-white font-medium shadow-md hover:scale-105 transition-transform duration-300"
+          >
+            View Projects
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1qrkDNHoh_J6_imEzScSgAM5NjK2DJ3SJvLsDFzI_X8Y/edit?usp=sharing"
+            target="_blank"
+            class="px-6 py-3 rounded-full border border-primary text-primary dark:text-white dark:border-white font-medium hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-darkBg transition-all duration-300"
+          >
+            My Resume
+          </a>
+        </div>
       </div>
+
+      <!-- Right Side Image -->
       <div class="md:w-1/2 flex justify-center">
         <img
-          src="C:\Users\as082\OneDrive\Desktop\August\Task4\me_3.jpg"
+          src="Asset/img/me_3.jpg"
           alt="Frontend Developer Girl"
           class="rounded-xl w-[300px] md:w-[350px] lg:w-[400px] object-cover"
         />
@@ -182,7 +204,7 @@
     </section>
 
     <section class="py-16 px-4 bg-[#fef9f5] dark:bg-[#121212]">
-      <div class="max-w-6xl mx-auto text-center">
+      <div class="max-w-6xl mx-auto text-center" id="projects">
         <h2 class="text-4xl font-bold mb-4">
           <span class="text-black dark:text-white">My</span>
           <span class="text-[#6b2737] dark:text-[#fddede]"> Projects</span>
@@ -209,10 +231,7 @@
                   loop
                   playsinline
                 >
-                  <source
-                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr_1.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="Asset/video/pr_1.mp4" type="video/mp4" />
                 </video>
               </div>
               <div
@@ -252,10 +271,7 @@
                   loop
                   playsinline
                 >
-                  <source
-                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr_3.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="Asset/video/pr_3.mp4" type="video/mp4" />
                 </video>
               </div>
               <div
@@ -294,10 +310,7 @@
                   loop
                   playsinline
                 >
-                  <source
-                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="Asset/video/pr.mp4" type="video/mp4" />
                 </video>
               </div>
               <div
@@ -336,10 +349,7 @@
                   loop
                   playsinline
                 >
-                  <source
-                    src="C:\Users\as082\OneDrive\Desktop\August\Task4\pr_5.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="Asset/video/pr_5.mp4" type="video/mp4" />
                 </video>
               </div>
               <div
@@ -401,14 +411,18 @@
             <h3
               class="text-xl font-semibold text-[#6b2737] dark:text-[#fddede] mb-2"
             >
-              💼 [Your Other Company Name]
+              💼 Numerique Diginautix Pvt. Ltd.
             </h3>
-            <p class="text-sm text-gray-700 dark:text-gray-300">
-              UI/UX Intern – Worked on user flows, low-fi designs & mobile UX
-              for a laundry service app.
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-1">
+              Web Design Intern (Remote) – Built responsive web pages using HTML
+              and CSS.
+            </p>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-1">
+              Applied UI/UX design principles in real projects, using Figma and
+              VS Code in a collaborative workflow.
             </p>
             <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
-              Month–Month 2025
+              Apr 2025 – Jul 2025
             </p>
           </div>
 
